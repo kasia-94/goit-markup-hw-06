@@ -335,10 +335,6 @@ img {
   color: var(--secondary-text-color);
 }
 
-.label:focus-within > .modal-form-icon {
-  fill: var(--accent-color);
-}
-
 .modal-form-icon {
   display: inline;
   position: absolute;
@@ -346,6 +342,12 @@ img {
   left: 15px;
   width: 18px;
   height: 18px;
+  transition: border 250ms var(--cubic-action);
+}
+
+.label:focus-within > .modal-form-icon,
+label:hover > .modal-form-icon {
+  fill: var(--accent-color);
 }
 
 .textarea {
@@ -365,7 +367,8 @@ img {
   transition: border 250ms var(--cubic-action);
 }
 
-.border-form:focus {
+.border-form:focus,
+.border-form:hover {
   outline: none;
   border: 1px solid var(--accent-color);
   background-origin: border-box;
@@ -800,6 +803,7 @@ address {
   line-height: 1.25;
 
   background-color: transparent;
+  color: var(--white-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
