@@ -405,7 +405,7 @@ label:hover > .modal-form-icon {
   transform: translate(55%, 20%);
   width: 16px;
   height: 15px;
-  background-image: url("https://github.com/kasia-94/goit-markup-hw-06/blob/main/images/Vector.svg");
+  background-image: url(../images/Vector.svg);
 }
 
 .checkbox-input:checked ~ .checkbox-icon {
